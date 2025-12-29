@@ -49,3 +49,31 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*End of Custom CSS Reset*/
+
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.sidebar-container {
+    grid-row: 1 / 7;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.header-container {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.main-content-container {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+}
