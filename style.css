@@ -87,6 +87,7 @@ button {
 
 .shadowbox {
   box-shadow: 0 5px 5px #00000030;
+  z-index: 10;
 }
 
 .trending-container, .announcement-container {
