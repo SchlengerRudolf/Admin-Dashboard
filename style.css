@@ -75,11 +75,11 @@ button {
 .main-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
 }
 
 .sidebar-container {
-    grid-row: 1 / 7;
+    grid-row: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(13, 2rem);
@@ -133,11 +133,11 @@ button {
 .button-pic {
   height: inherit;
   width: inherit;
-  background-color: #ffffff;
 }
 
 .clean-button {
   border-width: 0;
+  background-color: #ffffff;
 }
 
 .notification-button {
@@ -196,4 +196,69 @@ button {
     display: grid;
     grid-template-columns: 3fr 3fr 2fr;
     background-color: #e2e8f0;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+}
+
+.start-main {
+  grid-column: 1 / 3;
+}
+
+.project-container {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(1rem + 10px);
+}
+
+.project {
+  height: 210px;
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+  border-left-style: solid;
+  border-radius: 0.5rem;
+  border-left-width: 0.5vw;
+  border-left-color: #f0b429;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 100px 30px;
+}
+
+h3 {
+  font-weight: bolder;
+}
+
+.project h3 {
+  grid-row: 1;
+}
+
+.project p {
+  color: #636363;
+  grid-row: 2 / 3;
+}
+
+.project-icon-container {
+  display: flex;
+  justify-content: end;
+  gap: calc(1rem + 10px);
+  grid-row: 3 / 4;
+}
+
+.announcements {
+  grid-column: -2 / -1;
+  display: grid;
+}
+
+.start-trending {
+  grid-column: -2 / -1;
+}
+
+.trendings {
+  grid-column: -2 / -1;
+  display: grid;
+}
+
+.shadowbox {
+  box-shadow: 0 5px 5px #00000030;
 }
